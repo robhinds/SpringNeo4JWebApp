@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="index" template="/WEB-INF/views/home.jsp" />
+	
+	<definition name="main" template="/WEB-INF/views/index2.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp"/>
+	</definition>
+	
+	<definition name="error" template="/WEB-INF/views/404.html" />
+
+</tiles-definitions>

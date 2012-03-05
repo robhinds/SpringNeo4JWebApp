@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<taglib> 
+	<tlib-version>1.2</tlib-version> 
+	<jsp-version>1.2</jsp-version>
+	<short-name></short-name>
+	<uri>http://www.thirdmindmedia.co.uk/butterfly/jsonarray</uri>
+	<display-name>Butterfly Json Array Manipulation</display-name>
+	<description>Butterfly Json Array Manipulation</description>
+	
+	<tag>
+		<name>forEachJson</name> 
+		<tag-class>com.tmm.nosql.neo4j.taglibs.IterateJson</tag-class>
+		<body-content>JSP</body-content>
+		<display-name>Iterate JSON Array</display-name>
+		<description>Iterate JSON Array</description>
+		<attribute>
+			<name>items</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>JSON Aray</description>
+		</attribute> 
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>Item in array variable name</description>
+		</attribute>
+		<attribute>
+			<name>counter</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>loop counter</description>
+		</attribute>
+	</tag>
+	
+	
+	<tag>
+		<name>jsonGetString</name> 
+		<tag-class>com.tmm.nosql.neo4j.taglibs.JsonGetString</tag-class>
+		<body-content>JSP</body-content>
+		<display-name>get string from json</display-name>
+		<description>get string from json</description>
+		<attribute>
+			<name>json</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>JSON Object</description>
+		</attribute> 
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>key to retrieve the string from the json object</description>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>jsonGetVariable</name> 
+		<tag-class>com.tmm.nosql.neo4j.taglibs.JsonGetVariable</tag-class>
+		<body-content>JSP</body-content>
+		<display-name>get string from json</display-name>
+		<description>get string from json</description>
+		<attribute>
+			<name>json</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>JSON Object</description>
+		</attribute> 
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>key to retrieve the string from the json object</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>Item in array variable name</description>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>jsonGetArray</name> 
+		<tag-class>com.tmm.nosql.neo4j.taglibs.GetJsonArray</tag-class>
+		<body-content>JSP</body-content>
+		<display-name>get JsonArray from inside exiting json object</display-name>
+		<description>get JsonArray from inside exiting json object</description>
+		<attribute>
+			<name>json</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>JSON Object</description>
+		</attribute> 
+		<attribute>
+			<name>key</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>key to retrieve the string from the json object</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>Item in array variable name</description>
+		</attribute>
+	</tag>
+</taglib>
